@@ -1,0 +1,10 @@
+<script>
+var rej,sal,total,convertido;
+sal = prompt("Informe o salario para o reajuste");
+sal = parseFloat(sal.replace('.',','));
+rej = prompt("Informe o percentual para o reajuste");
+alert("O salario informado foi " +sal+ " e o percentual informado foi " +rej+"%");
+total = parseFloat(rej*sal)/parseFloat(100)+parseFloat(sal);
+convertido= total.toLocaleString('en-US',{style:'currency',currency: 'BRL' })
+alert ("O Reajuste foi "+convertido);
+</script>

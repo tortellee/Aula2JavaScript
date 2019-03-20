@@ -1,0 +1,22 @@
+<script>
+var acertou = false;
+var tentativas = 3;
+var ns = 8;
+	alert(" Jogo de adivinhar numero entre 1 e 10 ");
+	alert(" O jogador tera apenas 3 chances, caso contrario, o Jogo Termina ");
+while(tentativas > 0 && acertou == false){	
+var num1 = prompt ("Informe um numero","1");
+alert(" O Numero digitado foi " +num1);
+if(num1 == ns){
+alert(" PARABENS, " +num1+" ESTA CORRETO ");
+acertou = true;
+}else if(num1 < ns){
+	--tentativas;
+	alert(" ERRADO ");
+	alert(" DICA: O numero necessario eh MAIOR, tentativas restantes [" +tentativas+ "]" );
+}else if (num1 > ns){
+	--tentativas;
+	alert(" ERRADO ");
+	alert(" DICA: O numero necessario eh MENOR, tentativas restantes [" +tentativas+ "]" );
+}}
+</script>
